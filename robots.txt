@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Barcelona.pages.dev/sitemap.xml
+Sitemap: https://juan207145.github.io/landingpage/sitemap.xml

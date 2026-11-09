@@ -8,9 +8,9 @@
   <title>GameKeys Store | Claves de Videojuegos al Mejor Precio</title>
   <meta name="description" content="Compra claves digitales oficiales de videojuegos para Steam, Xbox, PlayStation y Nintendo con entrega instantánea, pagos seguros y hasta 70% de descuento.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://TU-DOMINIO.pages.dev/">
+  <link rel="canonical" href="https://juan207145.github.io/landingpage/">
   <meta name="theme-color" content="#004D98">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <!-- Redes sociales (Open Graph y Twitter) -->
   <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
   <meta property="og:site_name" content="GameKeys Store">
   <meta property="og:title" content="GameKeys Store | Claves de Videojuegos al Mejor Precio">
   <meta property="og:description" content="Claves digitales oficiales para Steam, Xbox, PlayStation y Nintendo con entrega instantánea.">
-  <meta property="og:url" content="https://TU-DOMINIO.pages.dev/">
+  <meta property="og:url" content="https://juan207145.github.io/landingpage/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="GameKeys Store | Claves de Videojuegos al Mejor Precio">
   <meta name="twitter:description" content="Claves digitales oficiales para Steam, Xbox, PlayStation y Nintendo con entrega instantánea.">
@@ -31,7 +31,7 @@
       {
         "@type": "OnlineStore",
         "name": "GameKeys Store",
-        "url": "https://Barcelona.pages.dev/",
+        "url": "https://juan207145.github.io/landingpage/",
         "description": "Tienda de claves digitales oficiales de videojuegos para Steam, Xbox, PlayStation y Nintendo.",
         "sameAs": ["https://facebook.com", "https://instagram.com"]
       },
@@ -351,4 +351,76 @@
       </div>
     </section>
 
-    <!-- SECCIÓN 08:
+    <!-- SECCIÓN 08: FAQ -->
+    <section id="faq" class="brand-section">
+      <div class="card-section border-grana-left">
+        <span class="badge-seccion">08. PREGUNTAS FRECUENTES (FAQ)</span>
+        <h2 class="section-title">Soporte y Dudas</h2>
+        <div class="btn-faq faq-item">
+          <h3 class="text-blau">¿Las claves tienen restricción regional?</h3>
+          <p>Especificamos siempre si la clave es Global o de una región en particular antes de completar tu compra.</p>
+        </div>
+        <div class="btn-faq faq-item">
+          <h3 class="text-blau">¿Qué hago si un código no funciona?</h3>
+          <p>Nuestro equipo de soporte técnico verifica y reemplaza la clave de inmediato.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 09: PRE-FOOTER (HUBSPOT) -->
+    <section id="prefooter" class="brand-section text-center">
+      <div class="card-section border-left-senyera">
+        <span class="badge-seccion">09. PRE-FOOTER (FORMULARIO CRM)</span>
+        <h2 class="section-title">Recibe Ofertas Exclusivas en tu Correo</h2>
+        <p>Suscríbete a nuestro boletín para recibir códigos de descuento semanales.</p>
+        <div class="hs-form-frame" data-region="na1" data-form-id="1725c035-e045-46cc-81d0-d834608785ab" data-portal-id="52187247"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SECCIÓN 10: FOOTER -->
+  <footer class="footer-fcb">
+    <div>
+      <span class="badge-seccion badge-footer">10. FOOTER</span>
+      <p>© 2026 GameKeys Store. FC Barcelona Branding Edition.</p>
+    </div>
+    <div>
+      <a href="https://facebook.com" id="red-facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a href="https://instagram.com" id="red-instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- GTM + HubSpot cargados al primer scroll, toque, mouse o tecla -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    (function () {
+      var cargado = false;
+      var eventos = ['scroll', 'mousemove', 'touchstart', 'keydown', 'click'];
+
+      function cargarTerceros() {
+        if (cargado) return;
+        cargado = true;
+        eventos.forEach(function (e) { window.removeEventListener(e, cargarTerceros); });
+
+        // Google Tag Manager
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-T7SCVWGP');
+
+        // Formulario de HubSpot
+        var hs = document.createElement('script');
+        hs.src = 'https://js.hsforms.net/forms/embed/52187247.js';
+        hs.defer = true;
+        document.body.appendChild(hs);
+      }
+
+      eventos.forEach(function (e) {
+        window.addEventListener(e, cargarTerceros, { passive: true });
+      });
+    })();
+  </script>
+
+</body>
+</html>
